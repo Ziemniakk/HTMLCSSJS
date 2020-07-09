@@ -69,7 +69,7 @@ ul{
 .contentcontainer{
 
 	
-	background-color: rgb(255, 0, 0);
+	background-color: rgba(255, 0, 0, 0);
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
@@ -83,7 +83,7 @@ ul{
 .topbar{
 	
 	
-	background-color: rgb(251, 255, 0);
+	background-color: rgba(251, 255, 0, 0.5);
 	height: 5%;
 	width: 100%;
 	border: #000000 solid 3px;
@@ -103,7 +103,7 @@ ul{
 .sidebar{
 
 	float: left;
-	background-color: rgb(98, 0, 255);
+	background-color: rgba(98, 0, 255, 0.5);
     height: 100%;
 	width: 10%;
 	border: #000000 solid 3px;
@@ -112,7 +112,8 @@ ul{
 
 .content{
 
-	background-color: rgb(72, 255, 0);
+	color: gray;
+	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	width: 100%;
 	border: #000000 solid 3px;
