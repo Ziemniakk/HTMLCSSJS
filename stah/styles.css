@@ -28,13 +28,11 @@ body
 
 }
 
-.stickybar ul{
+ul{
 
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	color: red;
-
 }
 
 .stickybar li{
@@ -71,35 +69,80 @@ body
 .contentcontainer{
 
 	
-	background-color: rgb(255,0,0, 0.5);
+	background-color: rgb(255, 0, 0);
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
 	margin-bottom: 10%;
-	min-width: 80%;
-	min-height: 1000px;
+	width: 80%;
+	height: 1200px;
+
 
 }
 
 .topbar{
 	
-	background-color: rgba(251, 255, 0, 0.5);
-	min-height: 50px;
+	
+	background-color: rgb(251, 255, 0);
+	height: 5%;
+	width: 100%;
+	border: #000000 solid 3px;
+
 
 }
+
+.topbarzawartosc{
+
+	margin-top: 20px;
+	font-size: 20px;
+
+
+}
+
 
 .sidebar{
 
 	float: left;
-	background-color: rgba(98, 0, 255, 0.5);
-    min-height: 950px;
-    min-width: 10%;
+	background-color: rgb(98, 0, 255);
+    height: 100%;
+	width: 10%;
+	border: #000000 solid 3px;
 
 }
 
 .content{
 
-	background-color: rgba(72, 255, 0, 0.5);
-	min-height: 950px;
+	background-color: rgb(72, 255, 0);
+	height: 100%;
+	width: 100%;
+	border: #000000 solid 3px;
+
+
+}
+
+.programyjs li{
+
+	margin-top: 5%;
+	margin-left: 5%;
+	float: left;
+
+}
+
+.programyjs li a{
+
+	
+	color: white;
+	display: block;
+	background-color:rgb(0, 0, 0);
+	padding: 16px 18px;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.programyjs li a:hover{
+
+	transition: all 0.7s;
+	background-color: rgb(128, 128, 128);
 
 }
