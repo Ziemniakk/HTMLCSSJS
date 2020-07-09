@@ -198,3 +198,66 @@ while(i<3)
 
 }
 */
+
+
+/*
+let hour = 12;
+let isweekend = true;
+
+if(hour < 10 || hour > 18 || isweekend==true)
+{
+    alert('siema');
+}
+else
+{
+    alert('pal gumsona');
+}
+*/
+
+
+/*
+let firstName = prompt('Jak masz na imię?')
+let lastName = prompt('Jak masz na nazwisko?')
+let nickName = prompt('Jaki masz nick?')
+
+alert(firstName || lastName || nickName || "Ale z ciebie anonimus nic nie podałeś :O");
+*/
+
+
+/*
+let age = prompt('Ile masz lat?')
+
+if(age >= 14 && age <= 90)
+{
+
+        alert('gume pal?')
+
+}
+*/
+
+
+let login = prompt('LOGIN:');
+
+if(login == "Admin")
+{
+
+    let password = prompt('HASŁO:');
+    if(password == "TheMaster")
+    {
+        alert('Welcome! masterkox');
+    }
+    else if(password == '' || password == "")
+    {
+        alert('Anulowano.');    }
+    else
+    {
+        alert('Zle Haslo!');
+    }
+}
+else if(login == "Other")
+{
+    alert('Nie znam cię');
+}
+else { alert ('Anulowano') }
+
+
