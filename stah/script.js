@@ -45,23 +45,23 @@ alert(admin);
 -------------*/
 
 
-/*
+/*-------------
 let name ="John";
 
 alert(`Hello , ${name}!`);
 
 alert(`the result is ${1 + 2}`)
-*/
+/*-------------
 
 
-/*
+/*-------------
 let age = prompt('How old are you?', 0);
 
 alert(`You are ${age} years old`);
 */
 
 
-/*
+/*-------------
 let czykrul = confirm(`Ty krul?`)
 if(czykrul==true){
 alert ( `proste ze tak` );
@@ -93,29 +93,29 @@ if(czykrul==false)
     alert(`oj byczku`);
 
 }
-*/
+/*-------------
 
 
-/*
+/*-------------
 let wybor = true;
 
 wybor = String(wybor);
 
 alert(typeof wybor);
-*/
+/*-------------
 
 
-/*
+/*-------------
 let a = 1, b = 1;
 
 let c = ++a; // ?
 let d = b++; // ?
 
 alert(`a wynosi ${a}, b wynosi${b}, c wynosi${c}, d wynosi ${d}`);
-*/
+/*-------------
 
 
-/*
+/*-------------
 let a = +prompt("First number?", 1);
 let b = +prompt("Second number?", 2);
 
@@ -123,6 +123,7 @@ alert(a + b); // 12
 */
 
 
+/*-------------
 let age = prompt('How old are u?',18);
 
 let message = (age < 3) ? 'Hi, baby!' :
@@ -131,4 +132,15 @@ let message = (age < 3) ? 'Hi, baby!' :
     'What na unusual age!';
 
 alert(message);
+-------------*/
 
+
+/*
+let siemanko = confirm('Siemanko to jest to samo co siema czy nie?', '?');
+
+(siemanko == true) ?
+    alert('Tak tak') : alert('Źle zią');
+*/
+
+
+let ask = prompt('What is the “official” name of JavaScript?');
