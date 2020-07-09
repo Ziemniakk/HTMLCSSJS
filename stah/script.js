@@ -144,3 +144,12 @@ let siemanko = confirm('Siemanko to jest to samo co siema czy nie?', '?');
 
 
 let ask = prompt('What is the “official” name of JavaScript?');
+
+if(ask == "ECMAScript")
+{
+    alert('Right');
+}
+else
+{
+    alert('Didn’t know? ECMAScript!');
+}
