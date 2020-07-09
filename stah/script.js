@@ -188,6 +188,7 @@ let message = (login == 'Employee') ? 'Hello' :
 */
 
 
+/*
 let i = 0;
 
 while(i<3)
@@ -196,3 +197,4 @@ while(i<3)
     i++
 
 }
+*/
