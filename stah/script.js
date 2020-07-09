@@ -186,3 +186,13 @@ let message = (login == 'Employee') ? 'Hello' :
   (login == '') ? 'No login' :
   '';
 */
+
+
+let i = 0;
+
+while(i<3)
+{
+    alert(i);
+    i++
+
+}
