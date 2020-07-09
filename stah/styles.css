@@ -1,6 +1,8 @@
 html,
 body
 {
+	overflow-wrap: break-word;
+
 	min-width: 500px;
 	background-position: center;
 	background-attachment: fixed;
@@ -124,8 +126,8 @@ ul{
 .programyjs li{
 
 	margin-top: 5%;
-	margin-left: 5%;
-	float: left;
+	margin-left: 0%;
+	
 
 }
 

@@ -44,6 +44,7 @@ admin = name;
 alert(admin);
 -------------*/
 
+
 /*
 let name ="John";
 
@@ -52,7 +53,46 @@ alert(`Hello , ${name}!`);
 alert(`the result is ${1 + 2}`)
 */
 
-let age = prompt('How old are you?', 100);
+
+/*
+let age = prompt('How old are you?', 0);
 
 alert(`You are ${age} years old`);
+*/
+
+
+/*
+let czykrul = confirm(`Ty krul?`)
+if(czykrul==true){
+alert ( `proste ze tak` );
+
+let nazwakrula = prompt(`A jak się nazywasz królu?`)
+
+alert(`Nazywasz się Król ${nazwakrula}`)
+
+let birthdate = prompt(`A którego roku się urodziłeś hmm?`)
+
+let czyprawda = confirm(`Czyli, że jesteś KRÓLEM nazywasz się ${nazwakrula} i Urodziłeś się ${birthdate} roku?`)
+
+if(czyprawda==true)
+{
+
+    alert(`I wzystko jasne!`)
+
+}
+else if(czyprawda==false)
+{
+
+    alert(`Oj coś się chyba pomyliło`)
+
+}
+}
+if(czykrul==false)
+{
+
+    alert(`oj byczku`);
+
+}
+*/
+
 
