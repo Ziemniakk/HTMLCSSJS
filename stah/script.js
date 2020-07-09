@@ -143,6 +143,7 @@ let siemanko = confirm('Siemanko to jest to samo co siema czy nie?', '?');
 */
 
 
+/*
 let ask = prompt('What is the “official” name of JavaScript?');
 
 if(ask == "ECMAScript")
@@ -153,3 +154,35 @@ else
 {
     alert('Didn’t know? ECMAScript!');
 }
+*/
+
+
+/*
+let number = prompt('Siemano dawaj numerek czy cos')
+
+if(number < 0)
+{
+    alert('Mniejsza niz 0');
+}
+else if(number > 0)
+{
+    alert(`Wieksza niz 0`);
+}
+else if(number == 0)
+{
+    alert('elo ale 0 dales kox');
+}
+*/
+
+
+/*
+let result = (a + b < 4) ? 'Below' : 'Over';
+*/
+
+
+/*
+let message = (login == 'Employee') ? 'Hello' :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+*/
