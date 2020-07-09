@@ -96,3 +96,39 @@ if(czykrul==false)
 */
 
 
+/*
+let wybor = true;
+
+wybor = String(wybor);
+
+alert(typeof wybor);
+*/
+
+
+/*
+let a = 1, b = 1;
+
+let c = ++a; // ?
+let d = b++; // ?
+
+alert(`a wynosi ${a}, b wynosi${b}, c wynosi${c}, d wynosi ${d}`);
+*/
+
+
+/*
+let a = +prompt("First number?", 1);
+let b = +prompt("Second number?", 2);
+
+alert(a + b); // 12
+*/
+
+
+let age = prompt('How old are u?',18);
+
+let message = (age < 3) ? 'Hi, baby!' :
+    (age < 18) ? 'Hello!' :
+    (age < 100) ? 'Greetings!' :
+    'What na unusual age!';
+
+alert(message);
+
