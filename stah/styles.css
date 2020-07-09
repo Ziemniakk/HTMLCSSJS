@@ -1,0 +1,105 @@
+html,
+body
+{
+	min-width: 500px;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("https://i.imgur.com/36PjIIx.jpg");
+	min-height: 100%;
+	min-width: 100%;
+	color: rgb(0, 0, 0);
+	background-color: #1E1E1E;
+	margin: 0;
+	padding: 0;	
+}
+
+.stickybar{
+
+	
+    position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-width: 100%;
+	min-height: 5%;
+
+}
+
+.stickybar ul{
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: red;
+
+}
+
+.stickybar li{
+
+	border-right: 1px solid #bbb;
+	float: left;
+
+}
+
+.stickybar li a{
+
+	
+	color: white;
+	display: block;
+	background-color:rgba(0, 0, 0, 0.6);
+	padding: 16px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+
+}
+
+.stickybar li a:hover{
+
+	transition: all 0.7s;
+	background-color: gray;
+
+}
+
+.container{
+
+	display: flex;
+}
+
+.contentcontainer{
+
+	
+	background-color: rgb(255,0,0, 0.5);
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	min-width: 80%;
+	min-height: 1000px;
+
+}
+
+.topbar{
+	
+	background-color: rgba(251, 255, 0, 0.5);
+	min-height: 50px;
+
+}
+
+.sidebar{
+
+	float: left;
+	background-color: rgba(98, 0, 255, 0.5);
+	min-height: 950px;
+
+}
+
+.content{
+
+	background-color: rgba(72, 255, 0, 0.5);
+	min-height: 950px;
+
+}
