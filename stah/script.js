@@ -35,10 +35,22 @@ alert(color);
 
 -------------*/
 
+
+/*-------------
 let admin, name = 'John';
 
 admin = name;
 
 alert(admin);
+-------------*/
+
+/*
+let name ="John";
+
+alert(`Hello , ${name}!`);
+
+alert(`the result is ${1 + 2}`)
+*/
+
 
 
