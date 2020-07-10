@@ -232,29 +232,25 @@ if(age >= 14 && age <= 90)
 
         alert('gume pal?')
 
-}
+}   
 */
 
 
 function Logowanie(){
 let login = prompt('LOGIN:');
-
 if(login == "Admin")
 {
+    do
+    {
+      let password = prompt('HASŁO');
 
-    let password = prompt('HASŁO:');
-    if(password == "krul")
-    {
-        alert('Siemano krul');
-        console.log("Zalogowano!!");
-    }
-    else if(password == '' || password == "")
-    {
-        alert('Anulowano.');    }
-    else
-    {
-        alert('Zle Haslo!');
-    }
+      if(password == "krul")
+      {
+          alert('Siemano krul');
+          console.log("Zalogowano!!");
+          break;
+      }
+    } while(password == "" || password != null);
 }
 else if(login == 'easteregg')
 {
@@ -271,8 +267,8 @@ else
     alert('Nie znam cię');
 }
 
-
 }
+
 
 
 /*
@@ -297,7 +293,6 @@ for(let i = 2; i < 5; i++)
 
 }
 */
-
 
 
 
