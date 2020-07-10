@@ -242,7 +242,7 @@ if(login == "Admin")
 {
     do
     {
-      let password = prompt('HASŁO');
+      var password = prompt('HASŁO');
 
       if(password == "krul")
       {
