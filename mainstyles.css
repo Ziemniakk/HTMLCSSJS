@@ -1,0 +1,57 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("mainimg.jpg");
+
+}
+
+#container{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#buttonslist
+{
+    position: fixed;
+    background-color: rgba(32, 150, 228, 0.308);
+    
+}
+
+ul
+{
+    margin: 0;
+	padding: 0;
+    list-style-type: none;
+
+}
+
+li
+{
+    
+    justify-content: center;
+
+}
+
+li a
+{
+    color: white;
+    background-color: black;
+    padding: 16px 18px;
+    border:rgba(0, 255, 0, 0.575) solid 2px;
+    display: block;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+li a:hover
+{
+
+    background-color: blueviolet;
+
+}
+
