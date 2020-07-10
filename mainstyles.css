@@ -40,7 +40,7 @@ li
 li a
 {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.479);
     padding: 16px 18px;
     border:rgba(0, 255, 0, 0.575) solid 2px;
     display: block;
@@ -51,7 +51,7 @@ li a
 li a:hover
 {
 
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.836);
 
 }
 
