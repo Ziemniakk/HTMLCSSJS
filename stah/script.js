@@ -246,6 +246,7 @@ if(login == "Admin")
     if(password == "krul")
     {
         alert('Siemano krul');
+        console.log("Zalogowano!!");
     }
     else if(password == '' || password == "")
     {

@@ -2,8 +2,6 @@ html,
 body
 {
 	overflow-wrap: break-word;
-
-	min-width: 500px;
 	background-position: center;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -20,6 +18,7 @@ body
 	padding: 0;	
 }
 
+/*-------------- NIE RUSZAĆ--------------------------------------*/
 .stickybar{
 
 	
@@ -29,13 +28,14 @@ body
 	min-height: 5%;
 
 }
-
+/*-------------------------------------------------------*/
 ul{
 
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
+
 
 .stickybar li{
 
@@ -63,35 +63,30 @@ ul{
 
 }
 
-.pagecontainer{
 
+.pagecontainer
+{
+	margin: 0 auto;
+	width: 100%;
 	display: flex;
+
 }
+
 
 .contentcontainer{
 
-	
+	display: flex;
 	background-color: rgba(255, 0, 0, 0);
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
 	margin-bottom: 10%;
 	width: 80%;
-	height: 1200px;
+	height: 100%;
 
 
 }
 
-.topbar{
-	
-	
-	background-color: rgba(251, 255, 0, 0.5);
-	height: 5%;
-	width: 100%;
-	border: #000000 solid 3px;
-
-
-}
 
 .topbarzawartosc{
 
@@ -106,18 +101,16 @@ ul{
 
 	float: left;
 	background-color: rgba(98, 0, 255, 0.5);
-    height: 100%;
 	width: 10%;
 	border: #000000 solid 3px;
 
 }
 
-.content{
 
+.content{
+	width: 100%;
 	color: gray;
 	background-color: rgba(0, 0, 0, 0.5);
-	height: 100%;
-	width: 100%;
 	border: #000000 solid 3px;
 
 
@@ -149,10 +142,15 @@ ul{
 
 }
 
-.footer
-{
-	background-color: cyan;
-	color: red;
+.footer {
 
+	color: gray;
+ 	position: absolute;
+ 	right: 0;
+ 	left: 0;
+ 	padding: 1rem;
+ 	background-color: #000000;
+ 	text-align: center;
 }
+
 
