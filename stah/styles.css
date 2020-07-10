@@ -67,6 +67,7 @@ ul{
 .pagecontainer
 {
 	margin: 0 auto;
+	padding-top: 64px;
 	width: 100%;
 	display: flex;
 
