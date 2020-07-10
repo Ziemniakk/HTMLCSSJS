@@ -243,9 +243,9 @@ if(login == "Admin")
 {
 
     let password = prompt('HASŁO:');
-    if(password == "TheMaster")
+    if(password == "krul")
     {
-        alert('Welcome! masterkox');
+        alert('Siemano krul');
     }
     else if(password == '' || password == "")
     {
@@ -255,11 +255,16 @@ if(login == "Admin")
         alert('Zle Haslo!');
     }
 }
-else if(login != "Admin")
+else if(login == '' || login == "")
+{
+     alert ('Anulowano')
+}
+else
 {
     alert('Nie znam cię');
 }
-else { alert ('Anulowano') }
+
+
 }
 
 
