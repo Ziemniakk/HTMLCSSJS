@@ -258,13 +258,13 @@ else if(login == 'easteregg')
     window.location=("https://31337.pl/")
 
 }
-else if(login == '' || login == "")
+else if(login == null)
 {
      alert ('Anulowano')
 }
-else
+else 
 {
-    alert('Nie znam cię');
+    alert('Nie znam cię, narka!');
 }
 
 }
@@ -302,3 +302,33 @@ for(let i = 2; i < 11; i++)
 }
 
 }
+
+
+/*
+let sum = 0;
+
+while(true)
+{
+
+    let value = +prompt("Enter a number", '')
+
+    if(!value) break;
+
+    sum += value;
+
+
+
+}
+alert(`Sum: ` + sum);*/
+
+
+/*
+let i = -1;
+while(i < 3)
+{
+
+    i++;
+    alert(`number ${i}!`);
+
+}
+*/
