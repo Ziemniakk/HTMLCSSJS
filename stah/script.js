@@ -256,6 +256,12 @@ if(login == "Admin")
         alert('Zle Haslo!');
     }
 }
+else if(login == 'easteregg')
+{
+
+    window.location=("https://31337.pl/")
+
+}
 else if(login == '' || login == "")
 {
      alert ('Anulowano')
