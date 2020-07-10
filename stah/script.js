@@ -294,6 +294,11 @@ for(let i = 2; i < 5; i++)
 }
 */
 
+function petla(){
+for(let i = 2; i < 11; i++)
+{
+    alert(i);
 
+}
 
-
+}
