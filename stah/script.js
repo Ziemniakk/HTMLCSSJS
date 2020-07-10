@@ -236,7 +236,7 @@ if(age >= 14 && age <= 90)
 */
 
 
-/*
+function Logowanie(){
 let login = prompt('LOGIN:');
 
 if(login == "Admin")
@@ -255,12 +255,12 @@ if(login == "Admin")
         alert('Zle Haslo!');
     }
 }
-else if(login == "Other")
+else if(login != "Admin")
 {
     alert('Nie znam cię');
 }
 else { alert ('Anulowano') }
-*/
+}
 
 
 /*
@@ -285,3 +285,5 @@ for(let i = 2; i < 5; i++)
 
 }
 */
+
+
