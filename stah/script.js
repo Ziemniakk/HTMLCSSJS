@@ -236,6 +236,7 @@ if(age >= 14 && age <= 90)
 */
 
 
+/*
 let login = prompt('LOGIN:');
 
 if(login == "Admin")
@@ -259,5 +260,13 @@ else if(login == "Other")
     alert('Nie znam cię');
 }
 else { alert ('Anulowano') }
+*/
 
+let jd = "JD";
+let x = 0;
 
+while(x < 3)
+{
+    alert(jd);
+    x++
+}
