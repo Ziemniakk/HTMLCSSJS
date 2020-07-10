@@ -1,6 +1,7 @@
 html,
 body
 {
+	font-family: 'Arimo', sans-serif;
 	overflow-wrap: break-word;
 	background-position: center;
 	background-attachment: fixed;
@@ -161,5 +162,6 @@ ul{
  	background-color: #000000;
  	text-align: center;
 }
+
 
 

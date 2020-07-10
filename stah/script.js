@@ -335,25 +335,25 @@ while(i < 3)
 
 function kalkulator()
 {
-let b = +prompt("1Liczba: ");
-let c = +prompt("2Liczba: ");
-let a = prompt("Co chcesz zrobić? 1- Dodawanie, 2- Odejmowanie");
+    let xd = confirm("Chcesz cos policzyć?")
+    if(xd == true)
+    {
+    let b = +prompt("1Liczba: ");
+    let c = +prompt("2Liczba: ");
+    let a = prompt("Co chcesz zrobić? 1- Dodawanie, 2- Odejmowanie");
 
-
-switch(a)
-{
-    case '1': 
-        alert(b+c);
-    break;
+    switch(a)
+    {
+        case '1': 
+            alert(b+c);
+        break;
     
-    case '2':
-        alert(b-c);
-    break;
-    default:
-    alert('pal wroty nie zrobie tego ok? dzieki');
+        case '2':
+            alert(b-c);
+        break;
+        default:
+        alert('pal wroty nie zrobie tego ok? dzieki');
+    }
+    }
 }
-}
-
-
-
 
