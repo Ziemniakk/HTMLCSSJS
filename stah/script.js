@@ -262,7 +262,9 @@ else if(login == "Other")
 else { alert ('Anulowano') }
 */
 
-let jd = "JD";
+
+/*
+let jd = "cześć";
 let x = 0;
 
 while(x < 3)
@@ -270,3 +272,16 @@ while(x < 3)
     alert(jd);
     x++
 }
+*/
+
+
+/*
+let zmienna = "test";
+
+for(let i = 2; i < 5; i++)
+{
+
+    alert(zmienna);
+
+}
+*/
