@@ -683,5 +683,45 @@ else{ alert(pow(x, n))}
 */
 
 
+/*
+function calc(question, yes)
+{
+    if(confirm(question)) yes()
+
+}
+
+calc("Chcesz coś policzyć?", math);
+
+function math(){
+
+    let a = +prompt("1Liczba: ");
+    let b = +prompt("2Liczba: ");
+
+    let c = confirm("Co chcesz? OK - DODAWANIE, ANULUJ - ODEJMOWANIE")
+    if(c == true)
+    {
+        alert(a + b);
+    }
+    else{
+
+        alert(a-b);
+
+    }
 
 
+}
+*/
+
+
+/* FUNKCJE STRZAŁEK
+function ask(question, yes, no){
+    if(confirm(question)) yes();
+    else no();
+
+}
+
+ask("Zgadzasz się?",
+() => alert("Zgadzasz się"),
+() => alert("nie zgadzasz się")
+);
+*/
