@@ -359,4 +359,90 @@ function kalkulator()
     }
     }
 }
+/*
+let browser = prompt("Jaka masz przeglo?")
+
+if(browser == 'Edge') {
+    alert("Masz edge'a!")}
+else if(browser == 'Chrome'){
+    alert("Masz Chrome'a!")}
+else if(browser == "Firefox"){
+    alert("Masz Firefoxa")}
+else if(browser == "Safari"){
+    alert("Masz Safari")}
+else if(browser == "Opera"){
+    alert("Masz Opere")}
+else if(browser == null){
+    alert("Mmm nie chcesz powiedzieć?")}
+else{alert("nie mozesz nic nie miec xd")}
+
+*/
+
+
+/*
+let browser = prompt("JD?");
+
+if(browser == 'Edge')
+{
+
+    alert("masz edge'a!")
+
+}
+else if(browser == 'Firefox' || browser == 'Opera' || browser == 'Chrome' || browser == 'Safari')
+{
+    console.log('xd?')
+    alert("masz od nas helpa!")
+
+}
+else if(browser == null)
+{
+
+    alert("Nie podawaj jak nie chcesz:p")
+
+}
+else
+{
+
+    alert("ojojoj co to jest?")
+
+}
+*/
+
+
+/*
+
+
+    case 'Edge':
+      alert( "You've got the Edge!" );
+      break;
+  
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+      alert( 'Okay we support these browsers too' );
+      break;
+  
+    default:
+      alert( 'We hope that this page looks ok!' );
+  }
+  */
+
+/*
+let a = +prompt('a?', '');
+
+switch(a)
+{
+    case 0:
+    alert( 0 );
+    break;
+    case 1:
+    alert( 1 );
+    break;
+    case 2:
+    case 3:
+    alert( '2,3');
+    break;
+}
+*/
 
