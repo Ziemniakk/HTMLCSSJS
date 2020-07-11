@@ -659,10 +659,20 @@ else{
 }*/
 
 
-// -- TO SAMO CO WYZEJ XD ^^^^^
+/*
 function pow(x,n) {
     return x**n
     };
+// -- TO SAMO CO WYZEJ XD ^^^^^
+function pow(x, n)
+{
+    let result = x;
+    for(i = 1; i < n; i++)
+    {
+        result *= n;
+    }
+    return result;
+}
 
 let x = prompt("1 liczba");
 let n = prompt("2 Liczba");
@@ -670,7 +680,7 @@ let n = prompt("2 Liczba");
 if(n < 1){ alert("XD? ty jebneity czy co")}
 else{ alert(pow(x, n))}
 
-
+*/
 
 
 
