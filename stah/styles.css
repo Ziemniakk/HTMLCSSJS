@@ -22,11 +22,24 @@ body
 /*-------------- NIE RUSZAĆ--------------------------------------*/
 .stickybar{
 
-	
+	z-index: 100;	
     position: fixed;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0);
 	min-width: 100%;
 	min-height: 5%;
+	border-bottom: 1px solid #bbb;
+	float: left;
+	color: green;
+	text-align: center;
+	
+
+}
+
+
+.stickybar tekst{
+
+
+font-size: 40px;
 
 }
 /*-------------------------------------------------------*/
@@ -51,7 +64,7 @@ ul{
 	
 	color: white;
 	display: block;
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgba(0, 0, 0);
 	padding: 16px 18px;
 	text-align: center;
 	text-decoration: none;
@@ -148,7 +161,7 @@ ul{
 {
 	cursor: pointer;
 	transition: all 0.7s;
-	background-color: rgb(128, 128, 128);
+	background-color: rgb(13, 160, 197);
 
 }
 
