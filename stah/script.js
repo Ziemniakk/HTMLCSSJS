@@ -494,26 +494,73 @@ function showCancel()
 ask("Zgadzasz się?", showOk, showCancel)
 */
 
-function test2(){
-function jd(question, tak, nie)
+function test2()
 {
-    if(confirm(question)) tak()
-    else nie();
+    function jd(question, tak, nie)
+    {
+        if(confirm(question)) tak()
+        else nie();
+    }
 
+    jd("TAK CZY NIE?", takk, niee)
+
+    function takk()
+    {
+        alert("TAK!");
+    }
+    function niee()
+    {
+        alert("NIE!!");
+    }
 }
 
-jd("TAK CZY NIE?", takk, niee)
-
-function takk()
+//            KOPIOWANIE FUNKCJI "let xd = powiedz;" oraz wywołanie skopiowanej funkcji
+function say(){
+function powiedz()
 {
-
-    alert("TAK!");
-
+    alert("hello")
 }
-function niee()
+
+let xd = powiedz;
+xd();
+powiedz();
+}
+// ---------------------------------------------------------------------------------
+
+
+/*            Modyfikacja zmiennej przez funkcję!
+function AKSODSKSAOPD()
 {
+let username = 'Kozak'; // 
 
-    alert("NIE!!");
+function tescik()
+{
+    username = 'Bob';
+
+    let message = `Hello ${username}`;
+
+    alert(message);
 
 }
+
+alert(username);
+
+tescik();
+
+alert(username);
 }
+//---------------------------------------*/
+
+
+/*            PRZEKAZYWANIE DANYCH DO FUNKCJI ZA POMOCĄ 2 PARAMETRÓW
+function showmessage(from, text){
+
+    alert(from + ": " + text);
+
+}
+
+showmessage("Disstream", "JD");
+showmessage("TEZ DISSTREAM", "TEZ JD");
+*/
+
+
