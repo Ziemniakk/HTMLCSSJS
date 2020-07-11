@@ -59,6 +59,7 @@ li a
     background-color: rgba(0, 0, 0, 0.479);
     padding: 16px 18px;
     border:rgba(0, 255, 0, 0.575) solid 2px;
+    margin: 1px;
     display: block;
     text-align: center;
     text-decoration: none;

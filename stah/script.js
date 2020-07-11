@@ -552,7 +552,7 @@ alert(username);
 //---------------------------------------*/
 
 
-/*            PRZEKAZYWANIE DANYCH DO FUNKCJI ZA POMOCĄ 2 PARAMETRÓW
+/*              PRZEKAZYWANIE DANYCH DO FUNKCJI ZA POMOCĄ 2 PARAMETRÓW
 function showmessage(from, text){
 
     alert(from + ": " + text);
@@ -562,5 +562,116 @@ function showmessage(from, text){
 showmessage("Disstream", "JD");
 showmessage("TEZ DISSTREAM", "TEZ JD");
 */
+
+
+/*
+let text = "XD";
+
+function showmessage(text)
+{
+    if(text === undefined)
+    {
+        text = "JD";
+        
+    }
+    alert(text);
+
+}
+
+
+alert(text);
+showmessage();
+alert(text);
+*/
+
+
+/*
+function showcount(count = "1"){
+    alert(count ?? "unknown");
+}
+
+showcount();
+showcount(null);
+showcount();
+*/
+
+
+/*
+function sum(a, b){
+
+    return a + b;
+
+}
+
+let result = sum(1, 2);
+alert(result);
+*/
+
+/*
+function checkAge(age){
+    if(age >= 18){
+        return true;
+    }
+    else{
+        return confirm("Masz pozwolenie?")
+    }
+}
+
+let age = prompt("ile masz lat?", 18);
+
+if(checkAge(age)){
+    alert("Pozwolenie");
+}
+else{ alert ("pal gume");}
+*/
+
+
+/*
+function calcPow(){
+let pytanko = confirm("Chcesz to zrobić?");
+if(pytanko == true) asdfgh();
+}
+function asdfgh(){
+
+function pow(x ,n){
+    let result = x;
+    
+    for (let i = 1; i < n; i++)
+    {
+        result *= x;
+    }
+    return result
+}
+
+    let x = prompt("1liczba?");
+    let n = prompt("2liczba?")
+
+
+if(n < 1)
+{
+    alert("Pal wroty to useless");
+
+}
+else{
+    alert( pow(x, n))
+
+}
+}*/
+
+
+// -- TO SAMO CO WYZEJ XD ^^^^^
+function pow(x,n) {
+    return x**n
+    };
+
+let x = prompt("1 liczba");
+let n = prompt("2 Liczba");
+
+if(n < 1){ alert("XD? ty jebneity czy co")}
+else{ alert(pow(x, n))}
+
+
+
+
 
 
