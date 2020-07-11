@@ -447,3 +447,73 @@ switch(a)
 */
 
 
+function kalkulator1(){
+    let x = confirm("Chcesz cos podzielic/pomnożyć?")
+
+    if(x == true){
+    let c = prompt("Co chcesz zrobić? 1- Dzielenie 2- Mnożenie")
+    
+    let a = +prompt("1 liczba: ")
+    let b = +prompt("2Liczba: ")
+
+    switch(c)
+    {
+        case '1':
+            alert(a/b);
+        break;
+        case '2':
+            alert(a*b);
+        break;
+        default:
+            alert("we pal gume");
+        break;
+    }
+
+    }
+}
+
+/*
+function ask(question, yes, no) // Funkcja ask(pytanie, tak, nie) - jeżeli przy pytaniu wybrane yes
+{
+    if(confirm(question)) yes()
+    else no();
+}
+
+function showOk()
+{
+    alert('OK');
+}
+
+function showCancel()
+{
+
+    alert('kansel')
+
+}
+
+ask("Zgadzasz się?", showOk, showCancel)
+*/
+
+function test2(){
+function jd(question, tak, nie)
+{
+    if(confirm(question)) tak()
+    else nie();
+
+}
+
+jd("TAK CZY NIE?", takk, niee)
+
+function takk()
+{
+
+    alert("TAK!");
+
+}
+function niee()
+{
+
+    alert("NIE!!");
+
+}
+}
