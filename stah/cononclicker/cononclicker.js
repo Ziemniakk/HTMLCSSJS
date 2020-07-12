@@ -1,6 +1,6 @@
 function rules(){
+    setInterval(updatecoins, 100);
     setInterval(persecond, 1000);
-    setInterval(checkcoins, 100);
     }
 
 const coins = {
@@ -8,14 +8,17 @@ const coins = {
     cononcoins: 0,
 
 };
+
+
 const stats = {
 
     multiplier: 1,
-    secmultiplier: 0.1,
+    secmultiplier: 0.1
 
 };
 
 let cost1 = 100;
+let cost2 = 120;
 
 function xd(){
 
@@ -24,11 +27,18 @@ function xd(){
 
 }
 
-
-function checkcoins()
+function persecond()
 {
-    document.getElementById("coins").innerHTML = (`Masz ${coins.cononcoins} Cononcoins!`);
-    document.getElementById("coins").style = "font-size: 30px; cursor: pointer; background-color: green;";
+    coins.cononcoins += stats.secmultiplier;
+
+}
+
+
+function updatecoins()
+{
+    coins.cononcoins.toFixed();
+    document.getElementById("coins").innerHTML = (`Masz ${coins.cononcoins.toFixed(2)} Cononcoins!`);
+    document.getElementById("coins").style = "font-size: 30px; background-color: green;";
 
 }
 
@@ -46,9 +56,17 @@ function upgrade1()
 
 }
 
-function persecond()
+function upgrade2()
 {
-    coins.cononcoins += stats.secmultiplier;
+    if(coins.cononcoins >=cost2)
+    {
+        stats.persecond += 0.1;
+        coins.cononcoins -= cost2;
+        cost1 *= 2;
+
+
+    }
+
 
 }
 
