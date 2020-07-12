@@ -58,11 +58,11 @@ function upgrade1()
 
 function upgrade2()
 {
-    if(coins.cononcoins >=cost2)
+    if(coins.cononcoins >= cost2)
     {
         stats.persecond += 0.1;
         coins.cononcoins -= cost2;
-        cost1 *= 2;
+        cost2 *= 2;
 
 
     }
