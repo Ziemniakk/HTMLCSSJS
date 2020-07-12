@@ -1,0 +1,189 @@
+html,
+body{
+
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.coinscontain
+{
+
+    float:left;
+    width: 15%;
+    background-color: red;
+    height: 10%;
+}
+
+
+
+.topbar{
+    word-wrap: break-word;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+    white-space:normal
+
+}
+
+
+
+
+
+.content
+{
+    float: left;
+    background-color: tomato;
+    height: 90%;
+    width: 85%;
+
+
+}
+
+.rightbar{
+    float: left;
+    height: 90%;
+    width: 15%;
+    background-color: yellowgreen;
+
+
+}
+
+#upgrade1
+{
+    border: turquoise solid 1px;
+    margin: 1%;
+    height: 7.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.mouseimg{
+
+    background-color: rgba(0, 247, 255, 0.377);
+    margin: 5px;
+    height: 85%;
+    width: 20%;
+    cursor: pointer;
+
+
+}
+
+
+#upgrade2
+{
+    margin: 1%;
+    height: 7.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+#upgrade3
+{
+    margin: 1%;
+    height: 7.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+#upgrade4
+{
+    margin: 1%;
+    height: 7.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+
+
+
+
+
+
+
+
+#clickImgContainer{
+
+    margin: 5%;
+}
+
+#clickImg{
+
+    transition: all 0.5s;
+    height: 560px;
+    background-image: url("images/cononcoin.png");
+    border: cyan solid 3px;
+    background-repeat: no-repeat;
+    width: 556px;
+}
+
+#clickImg:hover:active{
+
+    
+    height: 560px;
+    background-image: url("images/cononcoin.png");
+    border: cyan solid 3px;
+    background-repeat: no-repeat;
+    width: 556px;
+    transform: scale(1);
+    transition: all 0;
+
+
+}
+
+#clickImg:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: all 0.4s;
+    background-image: url("images/cononcoinhover.png");
+
+
+}
+
+#clickImg #clickzonecontainer{
+    height: 50px;
+    width: 50px;
+    margin-left: 45%;
+    padding-top: 50%;
+
+
+}
+
+#clickzone{
+
+    background-color: gray;
+
+}
+
+a tekst{
+    background-color: green;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#upgrade
+{
+
+    cursor: pointer;
+
+}
+
+.topbarcontain2{
+    width: 100%;
+    height: 100%;
+}
+
+wracaj{
+
+    text-decoration: none;
+    color: cyan;
+    font-size: 30px;
+    padding-bottom: 5%;
+
+}
