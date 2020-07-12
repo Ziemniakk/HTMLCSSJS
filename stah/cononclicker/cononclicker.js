@@ -60,7 +60,7 @@ function upgrade2()
 {
     if(coins.cononcoins >= cost2)
     {
-        stats.persecond += 0.1;
+        stats.secmultiplier += 0.1;
         coins.cononcoins -= cost2;
         cost2 *= 2;
 
