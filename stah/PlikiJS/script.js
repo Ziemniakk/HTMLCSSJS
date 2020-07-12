@@ -473,7 +473,7 @@ function kalkulator1(){
 }
 
 /*
-function ask(question, yes, no) // Funkcja ask(pytanie, tak, nie) - jeżeli przy pytaniu wybrane yes
+function ask(question, yes, no) 
 {
     if(confirm(question)) yes()
     else no();
@@ -626,7 +626,7 @@ else{ alert ("pal gume");}
 */
 
 
-/*
+
 function calcPow(){
 let pytanko = confirm("Chcesz to zrobić?");
 if(pytanko == true) asdfgh();
@@ -656,8 +656,7 @@ else{
     alert( pow(x, n))
 
 }
-}*/
-
+}
 
 /*
 function pow(x,n) {
@@ -725,3 +724,42 @@ ask("Zgadzasz się?",
 () => alert("nie zgadzasz się")
 );
 */
+
+
+/*
+let sum = function(a, b) {
+    let result = a + b;
+    alert(result);
+    return result;
+  };
+  
+
+function jd()
+{
+    sum(+prompt("1Liczba"), +prompt("2Liczba"));
+
+
+}*/
+
+function calc(action = {
+    a: +prompt("Co chcesz zrobić? 1-Dodać, 2-Odjąć, 3-Pomnożyc, 4-Podzielić"),
+    b: +prompt("Podaj pierwszą liczbę"),
+    c: +prompt("Podaj drugą liczbę")
+})
+{
+switch(action.a){
+    case 1:
+    alert(action.b + action.c);
+    break;
+    case 2:
+    alert(action.b - action.c);
+    case 3:
+    alert(action.b * action.c);
+    break;
+    case 4:
+    alert(action.b / action.c);
+    break;
+    default: alert("Spierdalaj");
+}
+}
+
