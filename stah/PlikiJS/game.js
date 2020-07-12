@@ -14,9 +14,8 @@ if(character.exp >= 100)
 }
 
 
-do{
 character.name = prompt("Nazwij swoją postać!");
-}while(character.name != null || character.name != undefined || character.name != "" || character.name != '');
+
 
 alert(`Twoja postać nazywa się: ${character.name}`)
 
