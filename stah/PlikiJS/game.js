@@ -68,7 +68,7 @@ function reset()
 
 
 alert("Nazwy przedmiotów w sklepie pisz z małej litery ok? np. apple a nie Apple bo kurwa nie chce mi sie tego robic zeby bylo inaczej ok? zajety jestem.")
-
+alert("A i ten spokojnie ja wiem, ze po dostawie w sklepie jak znowu wezmiesz apple to pisze, ze masz jedno jabłko wiec nie pisac ok?")
 const shelf = {
 
     apple: "apple",
