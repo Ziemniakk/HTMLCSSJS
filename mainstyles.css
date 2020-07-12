@@ -1,13 +1,14 @@
 html,
 body
 {
-    display: flex;
-    min-height: 100vh;
+    font-family: 'Bangers', cursive;
+    font-family: 'Raleway', sans-serif;    display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     width: 100%;
     margin: 0;
     padding: 0;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("mainimg.jpg");
@@ -23,6 +24,11 @@ body
 
 .buttonslist
 {
+    border-top: rgb(9, 255, 42) solid 4px; 
+    border-bottom: rgb(9, 255, 0) solid 4px;
+    left: 0;
+    top: 0;
+    position: sticky;
     justify-content: center;
     text-align: center;
     margin-top: 20%;
@@ -34,7 +40,7 @@ body
 
 .buttons
 {
-
+    
     background-color: rgba(32, 150, 228, 0.308);
     
 }
@@ -60,7 +66,7 @@ li a
     background-color: rgba(0, 0, 0, 0.479);
     padding: 16px 18px;
     border:rgba(0, 255, 0, 0.575) solid 2px;
-    margin: 1px;
+    margin-left: 3px;
     display: block;
     text-align: center;
     text-decoration: none;
