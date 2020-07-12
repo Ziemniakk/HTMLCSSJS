@@ -48,7 +48,8 @@ ul
 }
 
 li
-{
+{   
+    margin-top: 1px;
     justify-content: center;
 
 }
@@ -63,14 +64,13 @@ li a
     display: block;
     text-align: center;
     text-decoration: none;
-    transition: all 0.5s;
     float: left;
 
 }
 
 li a:hover
 {
-
+    transition: all 0.5s;
     background-color: rgba(137, 43, 226, 0.836);
 
 }
