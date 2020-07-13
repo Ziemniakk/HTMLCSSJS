@@ -58,6 +58,19 @@ body{
 
 }
 
+.content2 tekst
+{
+    background-color: white;
+    cursor: pointer;
+}
+
+.content2 tekst:hover
+{   
+    transition: all 0.5s;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
 #clickImgContainer
 {
     
