@@ -786,3 +786,15 @@ function sumit()
     alert(sum);
 }
 
+
+/*
+let jebacdisa = {
+    name: "dis",
+    todo: "jebac"
+}
+let jd = {};
+
+Object.assign(jd, jebacdisa);
+function sumit(){
+alert(jd.name);
+alert(jd.todo);}*/
