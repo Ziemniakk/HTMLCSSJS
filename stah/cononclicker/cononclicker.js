@@ -1,3 +1,11 @@
+let boughtmp = new Audio("bought.mp3") ;
+
+boughtmp.oncanplaythrough = function()
+{
+    boughtmp.play();
+}
+
+
 function rules()
 {
     setInterval(updatecoins, 100);
@@ -71,6 +79,7 @@ function upgrade1()
 
     if(coins.cononcoins >= cost1)
     {
+        boughtmp.play();
         stats.multiplier += 0.25;
         coins.cononcoins -= cost1;
         cost1 *= 1.5;
@@ -87,6 +96,10 @@ function upgrade2()
 {
     if(coins.cononcoins >= cost2)
     {
+
+       
+        
+        boughtmp.play();
         stats.secmultiplier += 0.1;
         coins.cononcoins -= cost2;
         cost2 *= 1.5;

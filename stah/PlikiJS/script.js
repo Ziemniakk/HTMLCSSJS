@@ -798,3 +798,144 @@ Object.assign(jd, jebacdisa);
 function sumit(){
 alert(jd.name);
 alert(jd.todo);}*/
+
+
+/*
+let chlop ={
+
+    name: "verick",
+    other: {
+        prof: 123,
+    }
+
+}
+
+
+let clone = Object.assign({}, chlop);
+
+function test(){
+clone.name = "to jebany dzban";
+
+chlop.other.prof++;
+alert(chlop.other.prof);
+alert(clone.other.prof);}
+*/
+
+
+/*                   Klonowanie bez użycia Object.assign
+let Obiekt ={
+
+    name: "jonathan",
+    surname: "Joestar"
+
+
+}
+
+let klon = {
+
+
+}
+
+for(let key in Obiekt){
+
+    klon[key] = Obiekt[key];
+
+}
+
+alert(klon.name);
+alert(klon.surname);
+*/
+
+//      DO NAUCZENIA JAK DZIAŁA TO NIŻEJ GOWNO
+let Obiekt ={
+
+    name: "Jonathan",
+    surname: "Joestar",
+    more: {
+
+        lol: 123,
+
+    }
+}
+
+let klon ={}
+
+
+for(let key in Obiekt)
+{
+    
+    if(typeof Obiekt[key] === 'object') // Jeżeli obecnie wykonywana wyzej petla for przerabia część obiektu "Obiekt" która również jest obiektem to klon[(obecna pozycja w pętli wyżej(key))] = {} CZYLI STAJE SIĘ OBIEKTEM.
+    {
+        klon[key]= {};
+        for(let key2 in Obiekt[key])
+        {
+            klon[key][key2] = Obiekt[key][key2];
+        }
+    }
+    else
+    {
+        klon[key] = Obiekt[key];
+
+
+
+    }
+}
+klon.more.lol = 321;
+
+//alert(Obiekt.more.lol);
+
+/*
+let calculator ={
+
+    read()
+    {   
+        let x = this.x;
+        let y = this.y;
+        this.x = +prompt("1 liczba");
+        this.y = +prompt("2 liczba");
+    
+    },
+    sum()
+    {
+        return this.x+this.y;
+    },
+    mul()
+    {
+        return this.x*this.y;
+    }
+
+
+
+}
+
+calculator.read(1 ,2);
+calculator
+alert(calculator.sum() );
+alert(calculator.mul() );
+*/
+/*
+let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      return this;
+    },
+    down() {
+      this.step--;
+      return this;
+    },
+    showStep() { // shows the current step
+      alert( this.step );
+      return this;
+    }
+  };
+
+  ladder
+  .up()
+  .up()
+  .down()
+  .up()
+  .down()
+  .showStep();
+*/
+
