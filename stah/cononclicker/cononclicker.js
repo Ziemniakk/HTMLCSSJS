@@ -22,10 +22,15 @@ let cost2 = 120;
 
 function xd(){
 
+    var audio = new Audio("click.mp3" ) ;
+
+    audio.oncanplaythrough = function(){
+    audio.play();
+    }
 
     coins.cononcoins += stats.multiplier;
-
 }
+
 
 function persecond()
 {
@@ -75,6 +80,20 @@ function upgrade2()
     else{
         alert("Nie masz kurwa kasy ziomek D:")
     }
+
+
+}
+
+function hideBar(){
+
+    document.getElementById("rightbar").style.display = "none";
+    document.getElementById("clickImgContainer").style.cssText = "margin-left: 40%; transition: all 0.5s;";
+
+}
+function showBar(){
+
+    document.getElementById("rightbar").style.display = "block";
+    document.getElementById("clickImgContainer").style.cssText = "margin-left: 30%; transition: all 0.5s;";
 
 
 }
