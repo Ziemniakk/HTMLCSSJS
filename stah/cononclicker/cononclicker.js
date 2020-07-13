@@ -1,7 +1,22 @@
-function rules(){
+function rules()
+{
     setInterval(updatecoins, 100);
     setInterval(persecond, 1000);
+}
+
+function playmusic()
+{
+
+    let main = new Audio("song.mp3") ;
+
+    main.oncanplaythrough = function(){
+    main.play();
     }
+    main.loop = true;
+
+
+}
+
 
 const coins = {
 
@@ -22,10 +37,10 @@ let cost2 = 120;
 
 function xd(){
 
-    var audio = new Audio("click.mp3" ) ;
+    let clickaudio = new Audio("click.mp3") ;
 
-    audio.oncanplaythrough = function(){
-    audio.play();
+    clickaudio.oncanplaythrough = function(){
+    clickaudio.play();
     }
 
     coins.cononcoins += stats.multiplier;
