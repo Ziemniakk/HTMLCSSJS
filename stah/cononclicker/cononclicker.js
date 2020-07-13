@@ -3,17 +3,18 @@ function rules()
     setInterval(updatecoins, 100);
     setInterval(persecond, 1000);
 }
+let isplayed = false
 
 function playmusic()
 {
-
     let main = new Audio("song.mp3") ;
-
+    if(isplayed == false){
     main.oncanplaythrough = function(){
     main.play();
     }
+    isplayed = true
     main.loop = true;
-
+    }
 
 }
 
