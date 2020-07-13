@@ -763,3 +763,38 @@ switch(action.a){
 }
 }
 
+
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130,
+};
+let sum=0;
+let key=0;
+function sumit()
+{
+    for(let key in salaries){
+        sum += salaries[key];
+
+    }
+    if(sum > salaries.John + salaries.Ann + salaries.Pete)
+    {
+        sum -= salaries.John + salaries.Ann + salaries.Pete;
+
+    }
+    alert(sum);
+}
+
+
+/*
+let jebacdisa = {
+    name: "dis",
+    todo: "jebac"
+}
+let jd = {};
+
+Object.assign(jd, jebacdisa);
+function sumit(){
+alert(jd.name);
+alert(jd.todo);}*/

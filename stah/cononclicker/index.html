@@ -1,0 +1,102 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="cononclicker.css"/>
+<title>CONON CLICKER!!!</title>
+</head>
+
+<body onload="rules()">
+
+
+
+<div class="content">
+
+    <div class="coinscontain">
+
+        <tekst>Masz <a id="coins"></a> CONONCOINSÓW!</tekst>
+    </div>
+    
+    
+    <div class="topbar">
+        <div class="topbarcontain">
+            
+    
+    
+        </div>
+        <div clas="topbarcontain2">
+            <p align="right"><a href="../index.html">wracaj na główną</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+<div class="content2">
+
+    
+        <tekst><a onclick="hideBar()">hide</a><br></tekst>
+        <tekst><a onclick="showBar()">show</a><br></tekst>
+        <tekst><a onclick="playmusic()">PlayMusic</a></tekst>
+
+    
+        <div id="clickImgContainer">
+
+            <div id="clickImg" onclick="xd()">
+
+            </div>
+
+        </div>
+
+
+</div>
+
+<div id="rightbar">
+
+    <div class="upgrades">
+
+        <div class="upgrade">
+            <img src="images/mouse.png" class="upgradeimg" onclick="upgrade1()">
+            <tekst>
+            Mnożnik na przycisk<br>
+            Koszt: <a id="cost1">...</a><br>
+            Aktualny Mnożnik: <a id="multiplier">...</a></tekst>
+        </div>
+        <div class="upgrade">
+            <img src="images/multipliericon.png" class="upgradeimg2" onclick="upgrade2()">
+            <tekst>
+            Mnożnik na sekundę<br>
+            Koszt: <a id="cost2">...</a><br>
+            Aktualny Mnożnik: <a id="persecond">...</a></tekst>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--<a onclick="checkcoins()" id="coins"><tekst>check coins!</tekst></a>
+<div id="clickImgContainer">
+
+    <div id="clickImg" onclick="xd()">
+
+    </div>
+
+</div>
+</a>
+-->
+<script src="cononclicker.js"></script>
+</body>
+
+</html>
