@@ -1,11 +1,14 @@
 html,
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: gray;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     
 
 }
@@ -15,8 +18,13 @@ body{
 
     float:left;
     width: 15%;
-    background-color: red;
     height: 10%;
+}
+
+.coinscontain tekst
+{
+    font-size: 20px;
+
 }
 
 
@@ -24,7 +32,7 @@ body{
 .topbar{
     word-wrap: break-word;
     height: 10%;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(200, 0, 69, 0.685);
     text-align: center;
     white-space:normal
 
@@ -36,9 +44,8 @@ body{
 
 .content
 {
-    
     float: left;
-    background-color: tomato;
+    background-color: rgba(70, 69, 69, 0.685);
     height: 90%;
     width: 85%;
 
@@ -49,7 +56,7 @@ body{
     float:left;
     height: 90%;
     width: 15%;
-    background-color: yellowgreen;
+    background-color: rgba(153, 205, 50, 0.507);
 }
 
 .upgrades
@@ -60,7 +67,7 @@ body{
 
 .upgrade 
 {
-
+    font-size: 15px;
     width: 98%;
     max-height: 100px;
     margin: 1%;
@@ -69,7 +76,53 @@ body{
 
 }
 
+.upgrade tekst
+{
+    color: red;
+
+}
+
+
 .upgradeimg{
+    float: left;
+    width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+
+}
+.upgradeimg:hover{
+    content: url("images/mousehover.png");
+    float: left;
+    width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+
+}
+.upgradeimg:hover:active{
+    content: url("images/mouse.png");
+    float: left;
+    width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+
+}
+.upgradeimg2{
+    float: left;
+    width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+
+}
+.upgradeimg2:hover{
+    content: url("images/multipliericonhover.png");
+    float: left;
+    width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+
+}
+.upgradeimg2:hover:active{
+    content: url("images/multipliericon.png");
     float: left;
     width: 100px;
     max-height: 100px;
@@ -84,10 +137,6 @@ body{
 
 
 
-#clickImgContainer
-{
-
-}
 
 #clickImg{
 
@@ -135,15 +184,8 @@ body{
 
 }
 
-a tekst{
-    background-color: green;
-    font-size: 30px;
-    text-decoration: none;
-}
-
 #upgrade
 {
-
     cursor: pointer;
 
 }
@@ -151,5 +193,5 @@ a tekst{
 .topbarcontain2{
     width: 100%;
     height: 100%;
-    color: red;
+    color: rgba(255, 0, 0, 0.596);
 }

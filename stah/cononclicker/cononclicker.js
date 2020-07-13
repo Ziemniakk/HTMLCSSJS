@@ -37,8 +37,11 @@ function persecond()
 function updatecoins()
 {
     coins.cononcoins.toFixed();
-    document.getElementById("coins").innerHTML = (`Masz ${coins.cononcoins.toFixed(2)} Cononcoins!`);
-    document.getElementById("coins").style = "font-size: 30px; background-color: green;";
+    document.getElementById("coins").innerHTML = (`${coins.cononcoins.toFixed(2)}`);
+    document.getElementById("multiplier").innerHTML = (`${stats.multiplier.toFixed(2)}`);
+    document.getElementById("persecond").innerHTML = (`${stats.secmultiplier.toFixed(2)}`);
+    document.getElementById("cost1").innerHTML = (`${cost1.toFixed(2)}`);
+    document.getElementById("cost2").innerHTML = (`${cost2.toFixed(2)}`);
 
 }
 
@@ -49,9 +52,12 @@ function upgrade1()
     {
         stats.multiplier += 0.25;
         coins.cononcoins -= cost1;
-        cost1 *= 2;
+        cost1 *= 1.5;
 
 
+    }
+    else{
+        alert("Nie masz kurwa kasy ziomek D:")
     }
 
 }
@@ -62,13 +68,13 @@ function upgrade2()
     {
         stats.secmultiplier += 0.1;
         coins.cononcoins -= cost2;
-        cost2 *= 2;
+        cost2 *= 1.5;
 
 
+    }
+    else{
+        alert("Nie masz kurwa kasy ziomek D:")
     }
 
 
 }
-
-
-
