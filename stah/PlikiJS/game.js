@@ -112,6 +112,8 @@ switch(choice){
 
 }}
 
+
+
 function delivery()
 {
 
@@ -119,9 +121,15 @@ function delivery()
 
     switch(choice2){
         case true:
-            shelf.apple = "apple";
-            shelf.orange = "orange";
-            alert("DOSTARCZONO!")
+            if("apple" in shelf == false || "orange" in shelf == false){
+                shelf.apple = "apple";
+                shelf.orange = "orange";
+                alert("DOSTARCZONO!")
+            }
+            else
+            {
+                alert("XD co ty chcesz dostarczyc jak wszystko pelne D:")
+            }
         break;
         default:
     }
