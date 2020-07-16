@@ -40,8 +40,8 @@ nav{
     width: 80%;
     height: 5%;
     border: rgb(59, 22, 145) solid 2px;
-    background-color: rgba(0, 0, 0, 0.507);
-    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: blueviolet;
     margin: 20px 10% 0 10%;
     position: sticky;
     position: -webkit-sticky;
@@ -86,6 +86,9 @@ ul li:hover{
 }
 
 .sidebar{
+    border-left: blueviolet solid 3px;
+    border-top: blueviolet solid 3px;
+    border-bottom: blueviolet solid 3px;
     margin-left: 10%;
     background-color: rgba(76, 0, 130, 0.521);
     height: 100%;
@@ -96,14 +99,13 @@ ul li:hover{
 }
 
 .content{
-    margin-left: 26.1%;
-    margin-right: 10%;
+    border: blueviolet solid 3px;
+
+    margin-left: 26.3%;
     background-color: rgba(76, 0, 130, 0.521);
-    width: 62.15%;
-    float: 0;
-    display: 0;
-    height: 96.20%;
-    padding: 1%;
+    width: 61.83%;
+    height: 96.85%;
+    padding: 11px 1% 1% 1%;
     
 
 }
@@ -118,7 +120,6 @@ footer{
 }
 
 form{
-    font-size: 15px;
     margin: 4%;
     border: indigo solid 3px;
     padding: 5%;
@@ -126,10 +127,7 @@ form{
     
 }
 form:hover{
-    font-size: 15px;
-    margin: 4%;
     border: rgb(2, 0, 130) dotted 3px;
-    padding: 5%;
     
 }
 
