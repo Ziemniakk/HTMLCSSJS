@@ -1,0 +1,48 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, red, blue);
+    height: 100%;
+    width: 100%;
+}
+
+.calculator{
+    margin: 1%;
+}
+
+.calculator .textview
+{
+
+    height: 50px;
+    width: 404px;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+table button
+{
+    color:rgb(48, 122, 172);
+    background-color: rgb(56, 53, 53);
+    cursor: pointer;
+    font-size: 50px;
+    width: 100px;
+    height: 80px;
+
+}
+
+table button:hover
+{
+    color:rgb(48, 122, 172);
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+table button:active
+{
+    color:rgb(48, 122, 172);
+    background-color: rgb(56, 53, 53);
+
+
+}

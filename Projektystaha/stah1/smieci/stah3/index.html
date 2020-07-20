@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+
+
+
+
+<div class="calculator">
+    <form name="calc">
+        <input class="textview" name="textview">    
+    </form>
+    <table>
+        <tr>
+            <td><button onclick="c()">C</button></td>
+            <td><button onclick="dodaj('-')">-</button></td>
+            <td><button onclick="dodaj('+')">+</button></td>
+            <td><button onclick="document.calc.textview.value = eval(document.calc.textview.value)">=</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="dodaj(1)">1</button></td>
+            <td><button onclick="dodaj(2)">2</button></td>
+            <td><button onclick="dodaj(3)">3</button></td>
+            <td><button onclick="cofnij()"><</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="dodaj(4)">4</button></td>
+            <td><button onclick="dodaj(5)">5</button></td>
+            <td><button onclick="dodaj(6)">6</button></td>
+            <td><button onclick="dodaj('.')">.</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="dodaj(7)">7</button></td>
+            <td><button onclick="dodaj(8)">8</button></td>
+            <td><button onclick="dodaj(9)">9</button></td>
+            <td><button onclick="dodaj(0)">0</button></td>
+        </tr>
+
+
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="JS/script.js"></script>
+</body>
+
+</html>
