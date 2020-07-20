@@ -41,31 +41,223 @@
 {
     display:inline-block;
 }
+
+table {
+    border: 2px solid black;
+    column-width: 20px;
+}
+td {
+    border: 1px solid black;
+    height: 30px;
+}
         </style>
     </head>
     <body>
-        <script>
-            function function01 ()
-            {
-                let num01 = parseInt(document.getElementById("addNum1").value);
-                let num02 = parseInt(document.getElementById("addNum2").value);
-                document.getElementById("answer1").innerHTML = num01 + num02;
-            }
-        </script>
+
 
         <div id="navbar">
             <a href="../index.html" class="navbarNav" id="nav1">Strona główna</a>
             <a href="kalkulator.html" class="navbarNav">Kalkulator</a>
             <a href="telefon.html" class="navbarNav">Telefon</a>
         </div>
-
+<!--
         <div class="kalkulator" >
             <div class="dodawanie" >Number1: <input type="text" id="addNum1"></div>
             +
             <div class="dodawanie" >Number2: <input type="text" id="addNum2"></div>
             <button onclick="function01()">=</button>
             <p id="answer1"></p>
-
         </div>
+-->
+        <div>
+            <table>
+                <tr>
+                    <td colspan="4"><p id="wynik">0</p></td>
+                </tr>
+                <tr>
+                    <td><p id="reset"><button onclick="resetButton()">C</button></p></td>
+                    <td><p id="root"><button onclick="rootButton()">√</button></p></td>
+                    <td><p id="power"><button onclick="powerButton()">^</button></p></td>
+                    <td><p id="divide"><button onclick="divideButton()">/</button></p></td>
+                </tr>
+                <tr>
+                    <td><p id="num7"><button onclick="num7Button()">7</button></p></td>
+                    <td><p id="num8"><button onclick="num8Button()">8</button></p></td>
+                    <td><p id="num9"><button onclick="num9Button()">9</button></p></td>
+                    <td><p id="multiply"><button onclick="multiplyButton()">*</button></p></td>
+                </tr>
+                <tr>
+                    <td><p id="num4"><button onclick="num4Button()">4</button></p></td>
+                    <td><p id="num5"><button onclick="num5Button()">5</button></p></td>
+                    <td><p id="num6"><button onclick="num6Button()">6</button></p></td>
+                    <td><p id="minus"><button onclick="minusButton()">-</button></p></td>
+                </tr>
+                <tr>
+                    <td><p id="num1"><button onclick="num1Button()">1</button></p></td>
+                    <td><p id="num2"><button onclick="num2Button()">2</button></p></td>
+                    <td><p id="num3"><button onclick="num3Button()">3</button></p></td>
+                    <td><p id="add"><button onclick="addButton()">+</button></p></td>
+                </tr>
+                <tr>
+                    <td><p id="plusMinus"><button onclick="plusMinusButton()">+/-</button></p></td>
+                    <td><p id="num0"><button onclick="num0Button()">0</button></p></td>
+                    <td><p id="dot"><button onclick="dotButton()">.</button></p></td>
+                    <td><p id="equals"><button onclick="equalsButton()">=</button></p></td>
+                </tr>
+
+
+            </table>
+        </div>
+        <script>
+            let sign = "";
+            let wynik = "";
+            let l1 = "";
+            let l2 = "";
+
+            let second = false;
+            function num1Button()
+            {
+                if (second == false)
+                {
+                    l1 = l1 + "1";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else{
+                    l2 = l2 + "1";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num2Button()
+            {
+                if (second == false)
+                {
+                    l1 = l1 + "2";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else{
+                    l2 = l2 + "2";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num3Button()
+            {
+                if( second == false)
+                {
+                    l1 = l1 + "3";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "3";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num4Button()
+            {if( second == false)
+                {
+                    l1 = l1 + "4";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "4";
+                    document.getElementById("wynik").innerHTML = l2;
+                }}
+            function num5Button()
+            {
+                if( second == false)
+                {
+                    l1 = l1 + "5";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "5";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num6Button()
+            {
+                if( second == false)
+                {
+                    l1 = l1 + "6";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "6";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num7Button()
+            {
+                if( second == false)
+                {
+                    l1 = l1 + "7";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "7";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num8Button()
+            {
+                if( second == false)
+                {
+                    l1 = l1 + "8";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "8";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function num9Button()
+            {
+                if( second == false)
+                {
+                    l1 = l1 + "9";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else {
+                    l2 = l2 + "9";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
+            function addButton()
+            {
+                second = true;
+                sign = '+';
+            }
+            function minusButton()
+            {
+                second = true;
+                sign = '-';
+            }
+            function multiplyButton()
+            {
+                second = true;
+                sign = '*';
+            }
+            function divideButton()
+            {
+                second = true;
+                sign = '/';
+            }
+            function equalsButton(){
+                switch (sign) {
+                    case '+':
+                    document.getElementById("wynik").innerHTML = parseFloat(l1) + parseFloat(l2);
+                    break;
+                    case '-':
+                    document.getElementById("wynik").innerHTML = parseFloat(l1) - parseFloat(l2);
+                    break;
+                    case '*':
+                    document.getElementById("wynik").innerHTML = parseFloat(l1) * parseFloat(l2);
+                    break;
+                    case '/':
+                    document.getElementById("wynik").innerHTML = parseFloat(l1) / parseFloat(l2);
+                    break;
+                }
+            }
+            
+        </script>
     </body>
 </html>
