@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <style>
+            #navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+        </style>
+    </head>
+    <body>
+        <script>
+            function function01 ()
+            {
+                let num01 = parseInt(document.getElementById("addNum1").value);
+                let num02 = parseInt(document.getElementById("addNum2").value);
+                document.getElementById("answer1").innerHTML = num01 + num02;
+            }
+        </script>
+        <div id="navbar">
+            <a href="index.html">Strona główna</a>
+            <a href="kalkulator.html">Kalkulator</a>
+        </div>
+        <div class="kalkulator">
+            <div class="dodawanie" >Number1: <input type="text" id="addNum1"></div>
+            +
+            <div class="dodawanie" >Number2: <input type="text" id="addNum2"></div>
+            <button onclick="function01()">=</button>
+            <p id="answer1"></p>
+
+        </div>
+    </body>
+</html>
