@@ -1,0 +1,167 @@
+html,
+body{
+    font-family: 'Arimo', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://www.pxwall.com/wp-content/uploads/2018/08/highway-animated-wallpaper-4k-3840x2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+
+}
+
+.all{
+    width: 100%;
+    height: auto;
+
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: blueviolet;
+    text-align: center;
+    font-size: 45px;
+    padding: 2% 0 2% 0;
+    border: blueviolet solid 2px;
+    width: 80%;
+    height: 5%;
+    margin: 5% 10% 0 10%;
+
+
+}
+
+nav{
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    height: 4.5%;
+    border: blueviolet solid 2px;
+    background-color: rgb(0, 0, 0);
+    color: blueviolet;
+    margin: 20px 10% 0 10%;
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-start;
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+ul li{
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    border-right: gray solid 1px;
+
+
+
+}
+
+ul li a {
+    
+    margin-top: 5px;
+}
+
+
+ul li:hover{
+    transition: all 0.7s;
+    background-color: rgba(92, 92, 92, 0.582);
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+.sidebar{
+    border-left: blueviolet solid 3px;
+    border-top: blueviolet solid 3px;
+    border-bottom: blueviolet solid 3px;
+    margin-left: 10%;
+    background-color: rgba(76, 0, 130, 0.521);
+    height: 100%;
+    width: 16.1%;
+    height: 100%;
+    float: left
+
+}
+
+.content{
+    border: blueviolet solid 3px;
+    margin-left: 26.3%;
+    background-color: rgba(76, 0, 130, 0.521);
+    width: 61.6%;
+    height: 96.85%;
+    padding: 11px 1% 1% 1%;
+    
+
+}
+
+footer{
+    flex-shrink: 0;
+
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 4%;
+}
+
+form{
+    margin: 4%;
+    border: indigo solid 3px;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.411);
+    
+}
+form:hover{
+    border: rgb(2, 0, 130) dotted 3px;
+    
+}
+
+form input{
+    margin-left: 14%;
+    margin-bottom: 2%;
+    height: 100%;
+    
+    
+
+}
+
+.infbox{
+    
+    border: rgba(0, 0, 0, 0.507) solid 3px;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20.3%;
+    width: 98%;
+    
+
+    
+
+}
+
+.infbox h2{
+    text-align: center;
+}
+
+
+
+
+
+

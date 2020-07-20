@@ -939,3 +939,305 @@ let ladder = {
   .showStep();
 */
 
+
+/*
+User = {
+
+    name: "andrzej",
+    more: {
+
+    xd: "jd"
+    }
+}
+
+let nowy = {}
+
+
+for(let key in User)
+{
+    if(User[key] == 'object')
+    {
+        User[key] = {}
+        for(let key2 in User[key])
+        {
+            User[key][key2] =  nowy[key][key2];
+
+        }
+    }
+    else{
+
+        nowy[key] = User[key];
+
+    }
+
+
+}
+
+
+User.xd = "JDD";
+
+alert(nowy.more.xd);
+alert(User.xd);
+*/
+
+
+/*
+function User(name, isAdmin) {
+    this.name = name;
+    this.isAdmin = false;
+  }
+  
+let user1 = new User("Jack");
+let user2 = new User("Ann");
+let user3 = new User("Jonathan Joestar");
+
+alert(user1.name);
+alert(user2.name);
+alert(user3.name);
+
+*/
+
+/*
+let user = new function() {
+    this.name = "John";
+    this.isAdmin = false;
+  
+    // ...other code for user creation
+    // maybe complex logic and statements
+    // local variables etc
+  };
+
+  let jd = new function(){
+    this.xd="XD";
+
+  }
+
+alert(user.name);
+alert(jd.xd);
+*/
+
+/*
+function O(name, isAdmin){
+    this.name = name;
+    this.isAdmin = isAdmin;
+
+}
+
+let k = new O("LOL", false)
+
+alert(k.name);
+alert(k.isAdmin);
+*/
+
+
+/*
+function calculator(){
+
+
+
+
+    this.read = function(){
+        this.x = +prompt("1 Liczba: ");
+        this.y = +prompt("2 Liczba: ");
+
+    };
+
+    this.mul = function(){
+        return this.x * this.y;
+
+
+    };
+    this.sum = function(){
+        return this.x + this.y;
+
+    };
+
+}
+
+let Kalkulatorxxx = new calculator();
+Kalkulatorxxx.read();
+
+alert(Kalkulatorxxx.mul() );
+alert(Kalkulatorxxx.sum() );*/
+
+
+/*
+function Accumulator(startingValue)
+{
+    this.value = startingValue;
+    this.read = function()
+    {
+        this.value += +prompt("Co chcesz dodać?");
+    }
+}
+
+
+
+
+let accumulator = new Accumulator(1);
+
+accumulator.read();
+
+alert(accumulator.value);
+*/
+
+
+
+const userList = [];
+let xde = 0;
+const usedlogin = {};
+
+
+function createUser()
+{   
+    let choosingname = prompt("podaj nazwe: ")
+    if(choosingname == "" || choosingname == '')
+    {
+        alert("kurwa wpisz cos, a nie")
+        createUser();
+    }
+    else if(choosingname == null){alert("nie to nie ")}
+    else if(usedlogin[`login${xde}`] != choosingname)
+    {   
+        let choosedpassword = prompt("podaj haslo:")
+        if(choosedpassword == null || choosedpassword == undefined || choosedpassword == '' || choosedpassword == "")
+        {
+            alert("nie no bez hasla to nie zrobisz ziomek");
+            return;
+        }
+        xde++;
+        usedlogin[`login${xde}`] = choosingname;
+        userList[`user${xde}`] = {login:choosingname, password:choosedpassword,};
+        
+    }
+    else{
+        alert("nick zajęty");
+        createUser();
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+let klient = {
+    name: "Andrzej",
+    money: 1000,
+    toString(){
+
+        return `${this.name}`;
+    },
+    valueOf()
+    {
+        return this.money;
+    }
+}
+
+console.log(klient + 50123);
+*/
+
+
+
+/*
+let todoList = []
+
+let x = 0;
+
+function todoadd(){
+    x++;
+todoList[x] = prompt("Co trzeba jeszcze zrobić D:?");
+}*/
+
+
+
+
+/*
+let userList = []
+
+let x = 1;
+
+function addUser(){
+
+    let newuser = {
+        login: choosedLogin = prompt("Wybierz swój login: "),
+
+    }
+    let user = Object.assign({}, newuser)
+    console.log(user.login);
+
+
+    
+        
+    
+}
+*/
+let jebansko;
+function onLoad(){
+    setInterval(update, 10);
+
+}
+
+function update(){
+    jebansko = document.getElementById("inputmoj").value;
+
+
+}
+
+
