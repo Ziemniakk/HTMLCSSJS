@@ -115,6 +115,18 @@ td {
             let l2 = "";
 
             let second = false;
+            function num0Button()
+            {
+                if (second == false)
+                {
+                    l1 = l1 + "0";
+                    document.getElementById("wynik").innerHTML = l1;
+                }
+                else{
+                    l2 = l2 + "0";
+                    document.getElementById("wynik").innerHTML = l2;
+                }
+            }
             function num1Button()
             {
                 if (second == false)
@@ -240,6 +252,27 @@ td {
             {
                 second = true;
                 sign = '/';
+            }
+            function plusMinusButton()
+            {
+                var plusminus = true;
+                if(second ==false)
+                {   
+                    plusminus ? l1 = 0 - parseFloat(l1) : l1 = Math.abs(parseFloat(l1));
+                    document.getElementById("wynik").innerHTML = l1; 
+                }   
+                else {
+                    plusminus ? l2 = 0 - parseFloat(l2) : l2 = Math.abs(parseFloat(l2));
+                    document.getElementById("wynik").innerHTML = l2; 
+                }
+            }
+            function resetButton()
+            {
+                l1 = "";
+                l2="";
+                wynik = "0";
+                second = false;
+                document.getElementById("wynik").innerHTML = wynik;
             }
             function equalsButton(){
                 switch (sign) {
