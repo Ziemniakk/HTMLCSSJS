@@ -1,0 +1,18 @@
+{
+  "name": "stah8",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node serwer.js",
+    "dev": "nodemon serwer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,18 +1,34 @@
-const express = require('express');
-const port = 3000;
-
-const app = express();
-
-app.get("/", function(req, res) {
+require("./db/mongoose");
+const User = require('./db/models/user');
 
 
-    res.end("JD!");
-});
 
-app.listen(port, (error) => {
-    if(error)
+const createuser = async (data) =>{
+    try
     {
-        console.log("COŚ JEST NIE TAK!");
+        const user = new User(data)
+        await user.save()
+    
+        console.log(user)
+    } catch(error)
+    {
+        console.log(error);
     }
-    console.log("SERWER DZIAŁA!");
-});
+//     user.save().then(() => {
+//         console.log(user);
+//     }).catch(error => {
+//         console.log("cos nie tak!");
+// })
+}
+const findUsers = async () =>{
+    try{
+        const users = await User.find({});
+        console.log(users)
+    } catch(error){
+        console.log(error);
+    }
+}
+
+createuser({
+    name: "Steve",
+})

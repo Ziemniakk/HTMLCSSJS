@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+
+        <div class="header">
+
+        </div>
+
+        <div class="sidebar">
+            
+            <!-- <div class="logregbuttons">
+                    <button onclick="logdisplay()">Zaloguj się!</button>
+                    <button>Zarejestruj się!</button>
+            </div> -->
+
+        <div class="logregcontainer">
+
+            <div id="logincontainer">
+                
+                <form method="POST" action="http://127.0.0.1:3001/login" target="index.html">
+                    LOGIN</br><input type="text" id="Login" name="ulogin" class="forminput"></br>
+                    HASŁO</br>
+                    <input type="password" id="Pass" name="upassword" class="forminput"></br>
+                    <button type="submit">Zaloguj się!</button>
+                </form>
+
+            </div>
+
+            <div id="regcontainer">
+
+                <form method="POST" action="http://127.0.0.1:3001/register">
+                    LOGIN</br><input type="text" id="Login" name="newlogin" class="forminput"></br>
+                    HASŁO</br>
+                    <input type="password" id="Pass" name="newpassword" class="forminput"></br>
+                    <button type="submit">Zarejestruj się!</button>
+                </form>
+
+            </div>
+        </div>
+                
+
+        <div id="loginxd"></div>
+
+        </div>
+        <div class="content">
+            
+
+        </div>
+        <div class="footer">
+            XD
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </body> 
+</html>
